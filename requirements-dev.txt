@@ -1,0 +1,2 @@
+# Only needed to run tests/test_r2_assets.py and tools/r2_asset_preview.py
+Pillow>=10.0
