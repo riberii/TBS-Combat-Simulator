@@ -1,0 +1,1191 @@
+[
+ {
+  "file": "backgrounds/academy_courtyard.jpg",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   16,
+   408,
+   202,
+   506
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/academy_hall_night.jpg",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   211,
+   408,
+   399,
+   506
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/library.jpg",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   409,
+   408,
+   544,
+   506
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/chapel.jpg",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   553,
+   408,
+   663,
+   506
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/ruined_cathedral.jpg",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   16,
+   527,
+   202,
+   625
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/forest_path.jpg",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   211,
+   527,
+   389,
+   625
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/boss_arena.jpg",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   401,
+   527,
+   546,
+   625
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/hidden_room.jpg",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   555,
+   527,
+   664,
+   625
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/abyssal_academy.jpg",
+  "source_board": "Dark Fantasy Anime Game Asset Sheet-7",
+  "box": [
+   832,
+   26,
+   1268,
+   160
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/main_hall.jpg",
+  "source_board": "Dark Fantasy Anime Game Asset Sheet-7",
+  "box": [
+   1272,
+   26,
+   1534,
+   160
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/terrace.jpg",
+  "source_board": "Dark Fantasy Anime Game Asset Sheet-7",
+  "box": [
+   1068,
+   196,
+   1296,
+   301
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/abyssal_realm.jpg",
+  "source_board": "Dark Fantasy Anime Game Asset Sheet-7",
+  "box": [
+   1304,
+   196,
+   1534,
+   301
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "backgrounds/library_dark.jpg",
+  "source_board": "Dark Fantasy Anime Game Asset Sheet-7",
+  "box": [
+   832,
+   196,
+   1062,
+   301
+  ],
+  "kind": "bg",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ {
+  "file": "bosses/vael_banner.png",
+  "source_board": "Fantasy RPG Asset Board-17",
+  "box": [
+   1152,
+   31,
+   1525,
+   208
+  ],
+  "kind": "raw",
+  "size": [
+   373,
+   177
+  ]
+ },
+ {
+  "file": "companions/snow_owl.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1098,
+   398,
+   1204,
+   478
+  ],
+  "kind": "fx",
+  "size": [
+   318,
+   240
+  ]
+ },
+ {
+  "file": "cards/face_flame.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1086,
+   526,
+   1129,
+   599
+  ],
+  "kind": "card",
+  "size": [
+   172,
+   292
+  ]
+ },
+ {
+  "file": "cards/face_frost.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1135,
+   526,
+   1177,
+   599
+  ],
+  "kind": "card",
+  "size": [
+   168,
+   292
+  ]
+ },
+ {
+  "file": "cards/face_blood.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1182,
+   526,
+   1223,
+   599
+  ],
+  "kind": "card",
+  "size": [
+   164,
+   292
+  ]
+ },
+ {
+  "file": "cards/face_resonance.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1228,
+   526,
+   1269,
+   599
+  ],
+  "kind": "card",
+  "size": [
+   164,
+   292
+  ]
+ },
+ {
+  "file": "cards/face_fate.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1274,
+   526,
+   1315,
+   599
+  ],
+  "kind": "card",
+  "size": [
+   164,
+   292
+  ]
+ },
+ {
+  "file": "cards/back_red.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1089,
+   654,
+   1138,
+   733
+  ],
+  "kind": "card",
+  "size": [
+   196,
+   316
+  ]
+ },
+ {
+  "file": "cards/back_blue.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1148,
+   654,
+   1196,
+   733
+  ],
+  "kind": "card",
+  "size": [
+   192,
+   316
+  ]
+ },
+ {
+  "file": "cards/back_purple.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1206,
+   654,
+   1254,
+   733
+  ],
+  "kind": "card",
+  "size": [
+   192,
+   316
+  ]
+ },
+ {
+  "file": "cards/back_gold.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1263,
+   654,
+   1312,
+   733
+  ],
+  "kind": "card",
+  "size": [
+   196,
+   316
+  ]
+ },
+ {
+  "file": "fx/chain_ring_red_a.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1286,
+   40,
+   1374,
+   106
+  ],
+  "kind": "fx",
+  "size": [
+   264,
+   198
+  ]
+ },
+ {
+  "file": "fx/chain_silver_vertical.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1362,
+   36,
+   1416,
+   116
+  ],
+  "kind": "fx",
+  "size": [
+   162,
+   240
+  ]
+ },
+ {
+  "file": "fx/chain_ring_red_b.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1431,
+   38,
+   1514,
+   104
+  ],
+  "kind": "fx",
+  "size": [
+   249,
+   198
+  ]
+ },
+ {
+  "file": "fx/chain_ring_silver_a.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1286,
+   118,
+   1357,
+   160
+  ],
+  "kind": "fx",
+  "size": [
+   213,
+   126
+  ]
+ },
+ {
+  "file": "fx/chain_red_diagonal.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1351,
+   110,
+   1425,
+   177
+  ],
+  "kind": "fx",
+  "size": [
+   222,
+   201
+  ]
+ },
+ {
+  "file": "fx/chain_ring_thorn.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1430,
+   120,
+   1510,
+   164
+  ],
+  "kind": "fx",
+  "size": [
+   240,
+   132
+  ]
+ },
+ {
+  "file": "fx/chain_silver_diagonal.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1286,
+   183,
+   1365,
+   250
+  ],
+  "kind": "fx",
+  "size": [
+   237,
+   201
+  ]
+ },
+ {
+  "file": "fx/chain_silver_tangle.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1346,
+   181,
+   1414,
+   253
+  ],
+  "kind": "fx",
+  "size": [
+   204,
+   216
+  ]
+ },
+ {
+  "file": "fx/chain_ring_red_c.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1416,
+   185,
+   1504,
+   245
+  ],
+  "kind": "fx",
+  "size": [
+   264,
+   180
+  ]
+ },
+ {
+  "file": "fx/elem_fire.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1083,
+   281,
+   1141,
+   343
+  ],
+  "kind": "fx",
+  "size": [
+   174,
+   186
+  ]
+ },
+ {
+  "file": "fx/elem_ice.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1146,
+   281,
+   1205,
+   343
+  ],
+  "kind": "fx",
+  "size": [
+   177,
+   186
+  ]
+ },
+ {
+  "file": "fx/elem_lightning.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1212,
+   281,
+   1266,
+   343
+  ],
+  "kind": "fx",
+  "size": [
+   162,
+   186
+  ]
+ },
+ {
+  "file": "fx/elem_dark.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1273,
+   281,
+   1331,
+   343
+  ],
+  "kind": "fx",
+  "size": [
+   174,
+   186
+  ]
+ },
+ {
+  "file": "fx/elem_holy.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1336,
+   281,
+   1394,
+   343
+  ],
+  "kind": "fx",
+  "size": [
+   174,
+   186
+  ]
+ },
+ {
+  "file": "fx/elem_blood.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1401,
+   281,
+   1460,
+   343
+  ],
+  "kind": "fx",
+  "size": [
+   177,
+   186
+  ]
+ },
+ {
+  "file": "fx/elem_wind.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1466,
+   281,
+   1520,
+   343
+  ],
+  "kind": "fx",
+  "size": [
+   162,
+   186
+  ]
+ },
+ {
+  "file": "icons/potion_red.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1338,
+   393,
+   1378,
+   433
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/potion_blue.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1384,
+   393,
+   1424,
+   433
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/potion_purple.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1434,
+   393,
+   1474,
+   433
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/potion_pink.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1484,
+   393,
+   1524,
+   433
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/key_gold.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1338,
+   437,
+   1378,
+   477
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/tome.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1384,
+   437,
+   1424,
+   477
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/mace.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1434,
+   437,
+   1474,
+   477
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/scroll_book.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1484,
+   437,
+   1524,
+   477
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/flask_red.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1340,
+   514,
+   1380,
+   554
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/flask_cyan.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1386,
+   514,
+   1426,
+   554
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/amulet.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1434,
+   514,
+   1474,
+   554
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/wand.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1480,
+   514,
+   1520,
+   554
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/scroll.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1340,
+   560,
+   1380,
+   600
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/feather.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1386,
+   560,
+   1426,
+   600
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/key_ornate.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1434,
+   560,
+   1474,
+   600
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/vial.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1480,
+   560,
+   1520,
+   600
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/orb_dark.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1340,
+   607,
+   1380,
+   647
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/orb_gear.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1386,
+   607,
+   1426,
+   647
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/gem_heart.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1434,
+   607,
+   1474,
+   647
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "icons/scroll_case.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   1480,
+   607,
+   1520,
+   647
+  ],
+  "kind": "icon",
+  "size": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "models/warrior.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   12,
+   40,
+   138,
+   262
+  ],
+  "kind": "model",
+  "size": [
+   261,
+   460
+  ]
+ },
+ {
+  "file": "models/tank.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   402,
+   40,
+   527,
+   262
+  ],
+  "kind": "model",
+  "size": [
+   259,
+   460
+  ]
+ },
+ {
+  "file": "models/rogue.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   275,
+   40,
+   400,
+   262
+  ],
+  "kind": "model",
+  "size": [
+   259,
+   460
+  ]
+ },
+ {
+  "file": "models/witch.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   142,
+   24,
+   272,
+   262
+  ],
+  "kind": "model",
+  "size": [
+   251,
+   460
+  ]
+ },
+ {
+  "file": "models/vampire.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   652,
+   40,
+   775,
+   262
+  ],
+  "kind": "model",
+  "size": [
+   255,
+   460
+  ]
+ },
+ {
+  "file": "models/fallen_angel.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   55,
+   15,
+   300,
+   385
+  ],
+  "kind": "model",
+  "size": [
+   305,
+   460
+  ]
+ },
+ {
+  "file": "models/kitsune.png",
+  "source_board": "Chains of the Abyssal Choir-3",
+  "box": [
+   430,
+   40,
+   730,
+   372
+  ],
+  "kind": "model",
+  "size": [
+   416,
+   460
+  ]
+ },
+ {
+  "file": "models/dragonkin.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   778,
+   40,
+   900,
+   262
+  ],
+  "kind": "model",
+  "size": [
+   253,
+   460
+  ]
+ },
+ {
+  "file": "portraits/warrior.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   22,
+   38,
+   128,
+   144
+  ],
+  "kind": "portrait",
+  "size": [
+   256,
+   256
+  ]
+ },
+ {
+  "file": "portraits/tank.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   412,
+   38,
+   518,
+   144
+  ],
+  "kind": "portrait",
+  "size": [
+   256,
+   256
+  ]
+ },
+ {
+  "file": "portraits/rogue.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   285,
+   38,
+   391,
+   144
+  ],
+  "kind": "portrait",
+  "size": [
+   256,
+   256
+  ]
+ },
+ {
+  "file": "portraits/witch.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   152,
+   38,
+   262,
+   148
+  ],
+  "kind": "portrait",
+  "size": [
+   256,
+   256
+  ]
+ },
+ {
+  "file": "portraits/vampire.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   660,
+   38,
+   766,
+   144
+  ],
+  "kind": "portrait",
+  "size": [
+   256,
+   256
+  ]
+ },
+ {
+  "file": "portraits/fallen_angel.png",
+  "source_board": "Fallen Angel Game Asset Sheet-1",
+  "box": [
+   100,
+   28,
+   262,
+   190
+  ],
+  "kind": "portrait",
+  "size": [
+   256,
+   256
+  ]
+ },
+ {
+  "file": "portraits/dragonkin.png",
+  "source_board": "Dark Fantasy Anime Game Asset Showcase-9",
+  "box": [
+   786,
+   38,
+   892,
+   144
+  ],
+  "kind": "portrait",
+  "size": [
+   256,
+   256
+  ]
+ },
+ {
+  "file": "bosses/boss_elysia.png",
+  "source_board": "Crimson Cathedral_ Fallen Seraph Battle-6",
+  "box": [
+   460,
+   110,
+   1160,
+   580
+  ],
+  "kind": "boss_portrait",
+  "size": [
+   520,
+   null
+  ],
+  "note": "feathered elliptical alpha, no cut-out"
+ },
+ {
+  "file": "bosses/boss_seraphine.png",
+  "source_board": "Seraphine's Fall_ Shattered Spire Battle-2",
+  "box": [
+   520,
+   90,
+   1180,
+   520
+  ],
+  "kind": "boss_portrait",
+  "size": [
+   520,
+   null
+  ],
+  "note": "feathered elliptical alpha, no cut-out"
+ },
+ {
+  "file": "bosses/boss_umbral.png",
+  "source_board": "The Hollow Cathedral_ Abyssal Seraph Battle-5",
+  "box": [
+   850,
+   185,
+   1520,
+   730
+  ],
+  "kind": "boss_portrait",
+  "size": [
+   520,
+   null
+  ],
+  "note": "feathered elliptical alpha, no cut-out"
+ },
+ {
+  "file": "bosses/boss_briar.png",
+  "source_board": "Crimson Cathedral_ Fallen Seraph Battle-6 (hue-shifted green variant)",
+  "box": [
+   460,
+   110,
+   1160,
+   580
+  ],
+  "kind": "boss_portrait",
+  "size": [
+   520,
+   null
+  ],
+  "note": "feathered elliptical alpha, no cut-out"
+ }
+]
