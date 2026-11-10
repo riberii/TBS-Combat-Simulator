@@ -1,0 +1,2 @@
+# Emulated previews — NOT real screenshots
+These images were rendered with the dev-only PIL emulation of Pygame (`tools/devpygame`, `tools/render_preview.py`), not by Pygame-ce. Fonts, blending and scaling differ from the real game. They show layout and content only; replace them with real captures from a machine that has pygame-ce (see `TEST_REPORT.md`). The 2026-10-24 captures from the V2 build are in `docs/archive/`.
