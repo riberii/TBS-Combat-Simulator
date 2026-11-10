@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 """Build ChainsOfTheAbyssalChoir_Pygame_V3.zip from a CLEAN tree and verify it.
+=======
+"""Build ChainsOfTheAbyssalChoir_Pygame_R2.zip from a CLEAN tree and verify it.
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 
 The archive is made from ``git archive HEAD`` when the project is a git checkout (so uncommitted files, caches,
 saves and scratch never leak in), otherwise from a walk of the tree with the same exclusions. It is then extracted to a
@@ -20,7 +24,11 @@ import zipfile
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT_DIR = pathlib.Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT.parent
 TOP = "ChainsOfTheAbyssalChoir_Pygame"
+<<<<<<< HEAD
 ZIP_PATH = OUT_DIR / "ChainsOfTheAbyssalChoir_Pygame_V3.zip"
+=======
+ZIP_PATH = OUT_DIR / "ChainsOfTheAbyssalChoir_Pygame_R2.zip"
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 EXCLUDE_DIRS = {".git", "__pycache__", ".pytest_cache", "saves", "preview_out"}
 EXCLUDE_SUFFIX = {".pyc", ".pyo", ".bak"}
 EXCLUDE_NAMES = {"gitignore.txt", ".gitignore", "update_test_report.py"}
@@ -58,7 +66,11 @@ def build() -> int:
         for rel, data in files:
             zf.writestr(f"{TOP}/{rel.as_posix()}", data)
     digest = hashlib.sha256(ZIP_PATH.read_bytes()).hexdigest()
+<<<<<<< HEAD
     (OUT_DIR / "SHA256SUMS_V3.txt").write_text(f"{digest}  {ZIP_PATH.name}\n")
+=======
+    (OUT_DIR / "SHA256SUMS_R2.txt").write_text(f"{digest}  {ZIP_PATH.name}\n")
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
     print(f"Wrote {ZIP_PATH} ({ZIP_PATH.stat().st_size / 1_048_576:.1f} MB, {len(files)} files)\nSHA-256 {digest}")
     return len(files)
 
@@ -74,7 +86,11 @@ def verify() -> bool:
         root = pathlib.Path(td) / TOP
         env = {**os.environ, "SDL_VIDEODRIVER": "dummy", "SDL_AUDIODRIVER": "dummy", "PYTHONDONTWRITEBYTECODE": "1"}
         ok_all = True
+<<<<<<< HEAD
         for need in ("main.py", "requirements.txt", "README.md", "TEST_REPORT.md", "CHANGELOG_R2.md", "CHANGELOG_V3.md", "DESIGN_NOTES.md",
+=======
+        for need in ("main.py", "requirements.txt", "README.md", "TEST_REPORT.md", "CHANGELOG_R2.md", "DESIGN_NOTES.md",
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
                      "CONTRIBUTING.md", "ASSET_MANIFEST_R2.md", "Assets/Art/models/fallen_angel.png"):
             if not (root / need).is_file():
                 print("FAIL: missing", need)

@@ -31,6 +31,7 @@ The user's direction: cute, adult, anime-styled heroines in the manner of Nikke 
 
 ## 6. Out of scope / not done
 Added late: the optional Shrine (`systems/shrine.py`) as the risk/reward encounter; its payouts are untuned guesses. Branching rewards, room modifiers beyond V2's omens, formations and companion boons were not added. Real-Pygame verification is the largest gap (see `TEST_REPORT.md`).
+<<<<<<< HEAD
 
 
 ## V3: card hand tray
@@ -39,3 +40,5 @@ Added late: the optional Shrine (`systems/shrine.py`) as the risk/reward encount
 - **Snapshot boundary.** `HandView` is a frozen snapshot; the painter cannot mutate piles. Animation state lives in `ui/hand_anim.py` and is rebuilt from the hand when it drifts, so a wrong animation can never show a wrong card.
 - **Pile viewer.** Piles are sorted A-Z, never in draw order, so the viewer cannot be used to read the next card.
 - **Unchanged menu.** Number keys select menu rows unless the hand is raised; then they play card N. This keeps R2 muscle memory intact.
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f

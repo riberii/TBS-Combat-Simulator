@@ -65,7 +65,10 @@ from ui.renderer import (Character, CharacterKind, RestraintKind, Renderer as AA
                          clamp, glow_add, load_font, mix)
 from ui.assets import AssetManager, background_for_stage, boss_art_key, restraint_icon_key
 from ui.vfx import VFX
+<<<<<<< HEAD
 from ui.hand_anim import CARD_H, CARD_W, PILE_POS, REGION_L, HandAnimator
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 
 BOSS_INTRO_TIME = 3.4          # seconds the boss banner stays up (any key dismisses it)
 from entities.player import FallenAngel, Restraint as PlayerRestraint
@@ -745,9 +748,12 @@ class Painter:
         self.veil.fill((6, 3, 12, 175))
         self.dim = pygame.Surface((W, H), pygame.SRCALPHA)
         self.dim.fill((6, 3, 12, 120))
+<<<<<<< HEAD
         self.hand_anim = HandAnimator()                   # V3 card tray animation state
         self._hand_t = 0.0
         self._hand_cache: dict[tuple, Any] = {}
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 
     @property
     def t(self) -> float:
@@ -1258,6 +1264,7 @@ class Painter:
                 lines.append(line)
         for line_no, line in enumerate(lines[:3]):
             draw_text(surf, font, fit_text(font, line, max_width), (r.x + 14, r.y + 110 + line_no * 13), BONE, shadow=False)
+<<<<<<< HEAD
         has_hand = bool(getattr(combat, "card_battles", None)) and isinstance(active, object) and callable(getattr(combat, "hand_view", None))
         if has_hand and getattr(combat, "hand_focus", False):
             hint_line = "LEFT/RIGHT card  ENTER/1-9 play  M mulligan  V piles  ESC back"
@@ -1413,6 +1420,11 @@ class Painter:
         draw_text(surf, self.f["tiny"], "[V] next pile   [LEFT/RIGHT] switch   [any other key] close",
                   (r.centerx, r.bottom - 26), MUTED, "midbottom", shadow=False)
 
+=======
+        draw_text(surf, self.f["tiny"], "UP/DOWN select  ENTER use  number keys 1-9 quick-select",
+                  (r.x + 14, r.bottom - 18), MUTED, shadow=False)
+
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
     def qte(self, surf: pygame.Surface, combat: Any) -> None:
         src = getattr(combat, "qte", None) or combat
         if callable(getattr(src, "render_data", None)):
@@ -3767,11 +3779,17 @@ class GameApp:
             p.intent_probe = getattr(c, "intent_preview", None)
             p.enemy_field(cv, st.enemies, _target_index(c, st.enemies))
             self.vfx.draw_world(cv)
+<<<<<<< HEAD
             p.hand_tray(cv, c)
             p.party_cards(cv, st.players, getattr(c, "active", None))
             p.combat_panel(cv, c)
             p.top_bar(cv, st, f"Round {getattr(c, 'round_no', 1)}")
             p.pile_overlay(cv, c)
+=======
+            p.party_cards(cv, st.players, getattr(c, "active", None))
+            p.combat_panel(cv, c)
+            p.top_bar(cv, st, f"Round {getattr(c, 'round_no', 1)}")
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
             if _pname(c.phase) == "QTE":
                 p.qte(cv, c)
             if getattr(self, "boss_intro", None) is not None:

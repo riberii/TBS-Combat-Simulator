@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # TEST_REPORT — Chains of the Abyssal Choir V3 (R2 base + card hand tray)
+=======
+# TEST_REPORT — Chains of the Abyssal Choir R2
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 
 **Read this first.** Real Pygame-ce could not be installed in the build environment (PyPI, GitHub and apt were blocked), so
 **the game was never launched on real Pygame-ce, no real screenshot or recording exists, and no audio was ever listened to.**
@@ -23,7 +27,11 @@ Linux container, Python 3, NumPy, Pillow, OpenCV (art extraction only). pygame-c
 | `python -m compileall -q .` | STATIC | PASS |
 | `python tools/validate_content.py` | STATIC | PASS: 8 classes, 8 sprites, 37 abilities, 8 archetypes, 4 bosses, 12 halls, **24 cards, 19 restraint trials** |
 | `python tools/smoke_test.py` | UNIT (stub) | PASS: seed 20261024, 14 turns, score 881, save/load, idempotent leaderboard |
+<<<<<<< HEAD
 | `python -m unittest discover -s tests` | UNIT (stub) + EMULATED | **243 tests: 239 pass, 2 skipped, 2 errors** (see below) |
+=======
+| `python -m unittest discover -s tests` | UNIT (stub) + EMULATED | **216 tests: 212 pass, 2 skipped, 2 errors** (see below) |
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 | `tools/render_preview.py` (all screens) | EMULATED | renders without exceptions; PNGs named `*_emulated.png` |
 | `tools/draft_flow_check.py` | EMULATED | draft screen pick / skip / forge / back flow passes |
 | `tools/balance_sim.py` | NUMERIC | no crashes, no stuck fights (tables below) |
@@ -47,8 +55,11 @@ Linux container, Python 3, NumPy, Pillow, OpenCV (art extraction only). pygame-c
 | `test_shrine.py` | shrine bargains: distinct seeded offers, costs shown and never lethal, refused bargains change nothing, gamble both outcomes, save/load of the once-per-hall flag |
 | `test_assets_vfx.py` | every sheet/icon/ring/boss-art path exists and matches its declared grid; `Animation` timing, loop, one-shot, reduced-motion; art-effect lifecycle, cap, missing-art fallback; asset-root path jail |
 | `test_r2_audio.py` | NUMERIC checks of the four R2 WAVs and loader errors |
+<<<<<<< HEAD
 | `test_hand_tray.py` (V3) | card event log is bounded and ordered; pile viewer never reveals draw order; TAB focus, wrap-around cursor, ENTER / number-key play from the tray, unaffordable card refused without losing the turn, Esc from targeting returns to the raised hand (two-foe fight), mulligan key is free and limited, pile viewer cycles/closes and swallows keys, plain menu unchanged without TAB, empty hand refused, focus resets each turn, 9 random keyboard-mashing fights always finish with a valid cursor |
 | `test_hand_anim.py` (V3) | layout stays inside the tray for 1-9 cards; peek / raised / pending heights; opening hand dealt from the pile; play spawns a fading ghost; draws don't disturb other cards; mulligan; resync when the hand is edited without events; per-hero cursors; huge dt clamped |
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 
 ## Balance (NUMERIC, `tools/balance_sim.py --runs 20 --skill 0.75`)
 
@@ -63,7 +74,10 @@ Findings, stated plainly:
 - A real balance pass needs human play.
 
 ## Visual review (EMULATED only)
+<<<<<<< HEAD
 V3 tray scenes `hand_peek`, `hand_focus`, `hand_target`, `hand_piles`, `hand_play` (`tools/render_preview.py`) were rendered and inspected as emulated images: the peek strip, raised hand with tooltip, targeting with the pending card lifted, the pile viewer and a played card flying out. **Real Pygame-ce font metrics, blending and animation feel are unverified.**
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 Screens inspected as emulated renders and fixed where faulty: title, setup (right-side class stage), combat, blackout combat, trials, draft (pick and deck mode), boss intro banner and boss art, restraint icons in sidebar/journal, hub, rewards, shop, victory/defeat, element and chain-ring FX. Fixed this pass: sidebar covering the draft and ending screens, hub hint colliding with party cards, ending title width. **Still unverified in real Pygame-ce:** font metrics, text fit, alpha blending, scaling quality, frame timing, all animation feel.
 
 Known visual shortfalls: regular enemies are still the procedural low-poly silhouettes (the concept boards contain boss art and companion pets, not enemy sprites). Bosses use feathered concept-art portraits, not cut-outs. Hit/element FX are simple icon animations. Card hands are shown as menu entries, not as drawn cards in combat.

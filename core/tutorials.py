@@ -30,6 +30,7 @@ GENERAL_TUTORIALS: Final[list[TutorialLesson]] = [
         ),
     ),
     TutorialLesson(
+<<<<<<< HEAD
         "cards",
         "Card Hand",
         "Playing Cards From Your Hand",
@@ -42,6 +43,8 @@ GENERAL_TUTORIALS: Final[list[TutorialLesson]] = [
         ),
     ),
     TutorialLesson(
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
         "qte",
         "Quick-Time Precision",
         "Timing & Memory QTEs",

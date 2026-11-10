@@ -2,9 +2,15 @@
 
 > **Verification status:** this R2 build was produced in an environment where Pygame-ce could not be installed. The game logic is covered by 216 tests (212 pass, 2 skipped, 2 need real pygame-ce), but **the game has not been run on real Pygame-ce, no real screenshots exist and no audio has been listened to.** See `TEST_REPORT.md`. If anything misbehaves on first launch, that is the likely cause — please report it.
 
+<<<<<<< HEAD
 V3 adds the combat card-hand tray (`CHANGELOG_V3.md`). What R2 adds: a restraint-trial library for the Fallen Angel, 48 skill nodes with runtime hooks, elemental damage and statuses, an optional card/draft layer, anime-style art from the supplied concept boards, boss portraits and intro banners, element and chain FX, restraint icons, and new tools (`tools/balance_sim.py`, `tools/render_preview.py`). Details: `CHANGELOG_R2.md`, `DESIGN_NOTES.md`, `ASSET_MANIFEST_R2.md`, `CONTRIBUTING.md`.
 
 New in play: after a victory you pass through **The Choir Offers** (draft: take a card/relic, forge, remove or transmute a card, or skip for gold); at camp you may also **Kneel at the Shrine** (optional risk/reward, once per hall); in combat your drawn **card hand** sits along the bottom of the screen: **TAB** raises it, **LEFT/RIGHT** choose, **ENTER** or **1-9** play, **M** mulligan, **V** view the draw/discard/exhaust piles, **ESC** lowers it. The older **Cards** entry in the action menu still works.
+=======
+What R2 adds: a restraint-trial library for the Fallen Angel, 48 skill nodes with runtime hooks, elemental damage and statuses, an optional card/draft layer, anime-style art from the supplied concept boards, boss portraits and intro banners, element and chain FX, restraint icons, and new tools (`tools/balance_sim.py`, `tools/render_preview.py`). Details: `CHANGELOG_R2.md`, `DESIGN_NOTES.md`, `ASSET_MANIFEST_R2.md`, `CONTRIBUTING.md`.
+
+New in play: after a victory you pass through **The Choir Offers** (draft: take a card/relic, forge, remove or transmute a card, or skip for gold); at camp you may also **Kneel at the Shrine** (optional risk/reward, once per hall); in combat choose **Cards** from the action menu to play a card instead of an ability.
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 
 ---
 

@@ -33,7 +33,10 @@ from systems.inventory_system import ItemDef, apply_item
 from systems.qte_system import ANGEL_WORDS, QTE, TypingQTE, create_qte
 from systems.card_system import (CARDS, RELICS, CardBattle, can_pay, cost_label, card_text, effective_cost, pay,
                                  parse_ref, resolve as resolve_card, sanitize_deck, starter_deck)
+<<<<<<< HEAD
 from systems.hand_view import PILES, HandView, build_hand_view
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 from systems.restraint_trials import TrialLibrary, TrialMixin, trial_tier
 
 if TYPE_CHECKING:
@@ -157,10 +160,13 @@ class CombatSystem:
         self.menu: list[MenuEntry] = []
         self.menu_idx = 0
         self.in_items = False
+<<<<<<< HEAD
         self.hand_focus = False                           # V3: True while the keyboard steers the hand tray
         self.hand_idx = 0                                 # V3: cursor inside the hand
         self.pile_view: Optional[str] = None              # V3: "draw" / "discard" / "exhaust" while the pile viewer is open
         self._from_hand = False                           # the pending card was chosen from the tray (Esc returns there)
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
         self.targets: list[BaseEntity] = []
         self.target_idx = 0
         self.qte: Optional[QTE] = None
@@ -703,7 +709,10 @@ class CombatSystem:
         lucidity_before = float(hero.lucidity) if isinstance(hero, FallenAngel) else 0.0
         self._guarded(f"{hero.name}'s turn start", hero.on_turn_start, self)
         cb = self._battle_for(hero)
+<<<<<<< HEAD
         self.hand_idx, self.hand_focus, self.pile_view = 0, False, None
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
         if cb is not None and hero.alive:
             cb.draw(1)                      # one fresh card per turn (the opening hand was dealt on first use)
         if isinstance(hero, FallenAngel) and hero.lucidity < lucidity_before:
@@ -903,9 +912,12 @@ class CombatSystem:
             self.phase, self.timer = Phase.RESOLVE, 0.0
             return
         self.in_items = False
+<<<<<<< HEAD
         self.hand_focus = False
         self.pile_view = None
         self._from_hand = False
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
         self.menu = [MenuEntry(a.label, a.cost, a.enabled, a.hint, ability=a) for a in hero.abilities()]
         cb = self._battle_for(hero)
         if cb is not None:
@@ -940,6 +952,7 @@ class CombatSystem:
         cb = self.card_battles.get(hero.uid)
         return can_pay(hero, card, up, cb.relics if cb else ())
 
+<<<<<<< HEAD
     def _card_entry(self, hero: Player, cb: CardBattle, i: int) -> MenuEntry:
         ref = cb.hand[i]
         card, up = parse_ref(ref)
@@ -1030,6 +1043,8 @@ class CombatSystem:
             return False
         return True
 
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
     def _open_cards(self) -> None:
         hero = self.active
         cb = self._battle_for(hero) if hero is not None else None
@@ -1037,9 +1052,19 @@ class CombatSystem:
             self._open_menu()
             return
         self.in_items = True
+<<<<<<< HEAD
         self.hand_focus = False
         self._from_hand = False
         entries: list[MenuEntry] = [self._card_entry(hero, cb, i) for i in range(len(cb.hand))]
+=======
+        entries: list[MenuEntry] = []
+        for i, ref in enumerate(cb.hand):
+            card, up = parse_ref(ref)
+            tags = (" [" + "/".join(card.tags) + "]") if card.tags else ""
+            entries.append(MenuEntry(card.name + ("+" if up else ""), cost_label(card, up, cb.relics),
+                                     can_pay(hero, card, up, cb.relics), f"{card_text(card, up)}{tags}",
+                                     kind="card", card=ref, card_index=i))
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
         if cb.mulligans > 0:
             entries.append(MenuEntry(f"Mulligan ({cb.mulligans} left)", "free", True,
                                      "Discard your hand and draw a fresh one. Does not use your turn.", kind="mulligan"))
@@ -1352,8 +1377,11 @@ class CombatSystem:
         if self.phase is Phase.MENU:
             if not self.menu:
                 return
+<<<<<<< HEAD
             if self._hand_key(key):
                 return
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
             if key in ("up", "w"):
                 self._move_menu(-1)
             elif key in ("down", "s"):
@@ -1379,10 +1407,14 @@ class CombatSystem:
             elif key in ("return", "space"):
                 self._begin_execute(self.targets[self.target_idx])
             elif key == "escape":
+<<<<<<< HEAD
                 back_to_hand = self._from_hand
                 self._open_menu()
                 if back_to_hand:
                     self._focus_hand(True)
+=======
+                self._open_menu()
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
         elif self.phase is Phase.QTE and self.qte is not None:
             self.qte.handle_key(key, text)
 

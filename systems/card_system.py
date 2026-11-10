@@ -42,7 +42,10 @@ DRAFT_SKIP_GOLD: Final[int] = 12
 RARITIES: Final[tuple[str, ...]] = ("common", "rare", "epic", "signature")
 RARITY_WEIGHT: Final[dict[str, float]] = {"common": 6.0, "rare": 3.0, "epic": 1.2, "signature": 0.0}
 CATCH_BREATH: Final[str] = "catch_breath"      # the free card injected if a hand would be dead
+<<<<<<< HEAD
 EVENT_LOG_MAX: Final[int] = 48
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 
 
 @dataclass(frozen=True)
@@ -221,6 +224,7 @@ class CardBattle:
     exhausted: list[str] = field(default_factory=list)
     mulligans: int = 1
     reshuffles: int = 0
+<<<<<<< HEAD
     # V3: a small bounded log of what happened to the cards, so the UI can animate draws / plays without diffing piles.
     events: list[tuple[int, str, str, int]] = field(default_factory=list)   # (serial, kind, ref, hand index)
     event_serial: int = 0
@@ -241,6 +245,8 @@ class CardBattle:
         """Sorted (never in draw order, so the pile viewer cannot be used to read the next card)."""
         pile = {"draw": self.draw_pile, "discard": self.discard, "exhaust": self.exhausted}.get(which, [])
         return sorted(pile, key=lambda r: (parse_ref(r)[0].name, r))
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 
     @classmethod
     def start(cls, rng: random.Random, deck: Sequence[str], relics: Sequence[str] = ()) -> "CardBattle":
@@ -261,7 +267,10 @@ class CardBattle:
             self.discard = []
             self.rng.shuffle(self.draw_pile)
             self.reshuffles += 1
+<<<<<<< HEAD
             self._note("shuffle")
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 
     def draw(self, n: int = 1) -> list[str]:
         drawn: list[str] = []
@@ -275,7 +284,10 @@ class CardBattle:
             ref = self.draw_pile.pop()
             self.hand.append(ref)
             drawn.append(ref)
+<<<<<<< HEAD
             self._note("draw", ref, len(self.hand) - 1)
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
         return drawn
 
     def total_cards(self) -> int:
@@ -286,7 +298,10 @@ class CardBattle:
         ref = self.hand.pop(index)
         card, _ = parse_ref(ref)
         (self.exhausted if card.exhaust else self.discard).append(ref)
+<<<<<<< HEAD
         self._note("exhaust" if card.exhaust else "play", ref, index)
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
         return ref
 
     def mulligan(self) -> bool:
@@ -296,7 +311,10 @@ class CardBattle:
         n = len(self.hand)
         self.discard.extend(self.hand)
         self.hand = []
+<<<<<<< HEAD
         self._note("mulligan")
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
         self.draw(n)
         return True
 
@@ -309,16 +327,24 @@ class CardBattle:
             if self.hand_size > len(self.hand):
                 self.draw(1)
             elif self.hand:
+<<<<<<< HEAD
                 self._note("discard", self.hand[0], 0)
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
                 self.discard.append(self.hand.pop(0))
                 self.draw(1)
             if any(can_play(ref) for ref in self.hand):
                 return None
         if len(self.hand) >= self.hand_size and self.hand:
+<<<<<<< HEAD
             self._note("discard", self.hand[-1], len(self.hand) - 1)
             self.discard.append(self.hand.pop())
         self.hand.append(CATCH_BREATH)
         self._note("draw", CATCH_BREATH, len(self.hand) - 1)
+=======
+            self.discard.append(self.hand.pop())
+        self.hand.append(CATCH_BREATH)
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
         return CATCH_BREATH
 
 

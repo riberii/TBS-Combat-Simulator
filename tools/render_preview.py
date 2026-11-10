@@ -43,7 +43,11 @@ def start_party(app, classes: list[str], difficulty: str = "Easy") -> None:
     app._start_run(difficulty)
 
 
+<<<<<<< HEAD
 SCREENS = ("title", "setup", "combat", "combat_blackout", "restraints", "trials", "draft", "shrine", "boss", "fx", "hub", "rewards", "shop", "victory", "defeat", "combat_solo", "hand_peek", "hand_focus", "hand_target", "hand_piles", "hand_play", "mode", "settings", "skill_tree", "wardrobe", "tutorials")
+=======
+SCREENS = ("title", "setup", "combat", "combat_blackout", "restraints", "trials", "draft", "shrine", "boss", "fx", "hub", "rewards", "shop", "victory", "defeat", "combat_solo", "mode", "settings", "skill_tree", "wardrobe", "tutorials")
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
 
 
 def main(argv: list[str]) -> int:
@@ -174,6 +178,7 @@ def main(argv: list[str]) -> int:
     if "combat_solo" in want:
         start_party(app, ["VAMPIRE"])
         snap(app, out / "combat_solo_emulated.png", 6); print("combat_solo ok")
+<<<<<<< HEAD
     if want & {"hand_peek", "hand_focus", "hand_target", "hand_piles", "hand_play"}:
         from systems.combat_system import Phase
 
@@ -220,6 +225,8 @@ def main(argv: list[str]) -> int:
             if c.phase is Phase.TARGET:
                 c.handle_key("return")
             snap(app, out / "hand_play_emulated.png", 6); print("hand_play ok", c.phase.name)
+=======
+>>>>>>> 06cf0ebd796e7e31dc9794af8f5c171d0e65033f
     return 0
 
 
